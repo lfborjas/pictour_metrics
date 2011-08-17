@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817031639) do
+ActiveRecord::Schema.define(:version => 20110817053514) do
 
   create_table "metrics", :force => true do |t|
     t.string   "format"
@@ -20,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20110817031639) do
     t.string   "method"
     t.string   "remote_ip"
     t.integer  "user_id"
-    t.integer  "session_id"
+    t.string   "session_id"
     t.string   "action"
     t.string   "controller"
     t.integer  "response_status"
