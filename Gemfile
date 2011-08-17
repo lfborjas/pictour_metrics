@@ -10,7 +10,7 @@ gem 'nifty-generators', :group => :development
 gem 'jquery-rails'
 
 # Use unicorn as the web server
-# gem 'unicorn'
+gem 'thin'
 
 # Deploy with Capistrano
 # gem 'capistrano'
@@ -31,3 +31,4 @@ gem 'jquery-rails'
 # group :development, :test do
 #   gem 'webrat'
 # end
+gem "mocha", :group => :test

@@ -1,0 +1,29 @@
+one:
+  format: MyString
+  parameters: MyText
+  user_agent: MyString
+  path: MyString
+  method: MyString
+  remote_ip: MyString
+  user_id: 1
+  session_id: 1
+  action: MyString
+  controller: MyString
+  response_status: 1
+  when: 2011-08-16 20:31:50
+  duration: 1.5
+
+two:
+  format: MyString
+  parameters: MyText
+  user_agent: MyString
+  path: MyString
+  method: MyString
+  remote_ip: MyString
+  user_id: 1
+  session_id: 1
+  action: MyString
+  controller: MyString
+  response_status: 1
+  when: 2011-08-16 20:31:50
+  duration: 1.5

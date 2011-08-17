@@ -1,0 +1,37 @@
+<% title "Metrics" %>
+
+<table>
+  <tr>
+    <th>Format</th>
+    <th>Parameters</th>
+    <th>User Agent</th>
+    <th>Path</th>
+    <th>Method</th>
+    <th>Remote Ip</th>
+    <th>User</th>
+    <th>Session</th>
+    <th>Action</th>
+    <th>Controller</th>
+    <th>Response Status</th>
+    <th>When</th>
+    <th>Duration</th>
+  </tr>
+  <% for metric in @metrics %>
+    <tr>
+      <td><%= metric.format %></td>
+      <td><%= metric.parameters %></td>
+      <td><%= metric.user_agent %></td>
+      <td><%= metric.path %></td>
+      <td><%= metric.method %></td>
+      <td><%= metric.remote_ip %></td>
+      <td><%= metric.user_id %></td>
+      <td><%= metric.session_id %></td>
+      <td><%= metric.action %></td>
+      <td><%= metric.controller %></td>
+      <td><%= metric.response_status %></td>
+      <td><%= metric.when %></td>
+      <td><%= metric.duration %></td>
+    </tr>
+  <% end %>
+</table>
+
