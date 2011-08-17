@@ -3,7 +3,7 @@ class MetricsController < ApplicationController
   before_filter :admin_required, :only => [:index]
   protect_from_forgery :except => [:create]
   def index
-    @metrics = Metric.all.order 'created_at DESC'
+    @metrics = Metric.order 'created_at DESC'
   end
 
   def create
