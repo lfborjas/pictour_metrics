@@ -7,8 +7,8 @@ class MetricsController < ApplicationController
   end
 
   def create
-    @metric = Metric.new.from_json(Base64.decode64(params[:data])) if params[:token] == '98ceae6c'
-    @metric.save
+    #@metric = Metric.new.from_json(Base64.decode64(params[:data])) if params[:token] == '98ceae6c'
+    Metric.create(params[:metric]) if params[:token] == '98ceae6c' 
     render :nothing => true
   end
 
