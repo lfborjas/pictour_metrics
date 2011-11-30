@@ -10,7 +10,7 @@ one:
   action: MyString
   controller: MyString
   response_status: 1
-  when: 2011-08-16 20:31:50
+  registered_at: 2011-08-16 20:31:50
   duration: 1.5
 
 two:
@@ -25,5 +25,5 @@ two:
   action: MyString
   controller: MyString
   response_status: 1
-  when: 2011-08-16 20:31:50
+  registered_at: 2011-08-16 20:31:50
   duration: 1.5

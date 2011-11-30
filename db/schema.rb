@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110817053514) do
+ActiveRecord::Schema.define(:version => 20111130035812) do
 
   create_table "metrics", :force => true do |t|
     t.string   "format"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20110817053514) do
     t.string   "action"
     t.string   "controller"
     t.integer  "response_status"
-    t.datetime "when"
+    t.datetime "registered_at"
     t.float    "duration"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -32,13 +32,13 @@ ActiveRecord::Schema.define(:version => 20110817053514) do
   end
 
   create_table "users", :force => true do |t|
-    t.string   "username"
-    t.string   "email"
-    t.string   "password_hash"
-    t.string   "password_salt"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.boolean  "is_admin"
+    t.string    "username"
+    t.string    "email"
+    t.string    "password_hash"
+    t.string    "password_salt"
+    t.timestamp "created_at"
+    t.timestamp "updated_at"
+    t.boolean   "is_admin"
   end
 
 end

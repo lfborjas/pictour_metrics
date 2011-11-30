@@ -1,10 +1,6 @@
 require 'test_helper'
 
 class MetricsControllerTest < ActionController::TestCase
-  def test_index
-    get :index
-    assert_template 'index'
-  end
 
   test "should create a metric instance" do
     data = {"token" => '98ceae6c', "metric"=>{"format"=>"[text/html]", 

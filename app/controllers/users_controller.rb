@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   end
 
   def activity
-    @metrics = Metric.where(:username => params[:username]).paginate(:page => params[:page], :per_page => 10)
+    @metrics = Metric.where(:username => params[:username]).paginate(:page => params[:page], :per_page => 10).order("registered_at DESC")
   end
 
   def new
