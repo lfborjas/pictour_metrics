@@ -1,6 +1,14 @@
 class UsersController < ApplicationController
   before_filter :login_required, :except => [:new, :create]
 
+  def visits
+    @metrics = Metric.group(:username).size
+  end
+
+  def activity
+    @metrics = Metric.where(:username => params[:username]).paginate(:page => params[:page], :per_page => 10)
+  end
+
   def new
     @user = User.new
   end

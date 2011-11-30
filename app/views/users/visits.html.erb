@@ -1,0 +1,12 @@
+<h2>Requests made by user</h2>
+<p>
+  There are currently <%= @metrics.size %> active users
+</p>
+<dl>
+  <% @metrics.each do |user, requests| %>
+    <% unless user.blank? %>
+      <dt><%= link_to user, activity_users_path(:username => user) %></dt>
+      <dd><%= requests %></dd>
+    <%end%>
+  <%end%>
+</dl>

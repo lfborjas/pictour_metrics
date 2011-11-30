@@ -9,7 +9,10 @@ PictourMetrics::Application.routes.draw do
 
   resources :sessions
 
-  resources :users
+  resources :users do
+    get 'visits', :on => :collection
+    get ':username/activity', :on => :collection, :action => 'activity', :as => 'activity'
+  end
 
   resources :metrics
 
