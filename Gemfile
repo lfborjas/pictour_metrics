@@ -9,6 +9,7 @@ gem 'rake', '0.9.2'
 gem 'sqlite3'
 gem 'nifty-generators', :group => :development
 gem 'jquery-rails'
+gem 'will_paginate', '~> 3.0'
 
 # Use unicorn as the web server
 gem 'thin'

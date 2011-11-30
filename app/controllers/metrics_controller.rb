@@ -3,7 +3,7 @@ class MetricsController < ApplicationController
   before_filter :admin_required, :only => [:index]
   protect_from_forgery :except => [:create]
   def index
-    @metrics = Metric.order 'created_at DESC'
+    @metrics = Metric.order('created_at DESC').paginate(:page => params[:page], :per_page => 30)
   end
 
   def create
